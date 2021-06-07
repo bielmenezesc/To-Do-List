@@ -1,0 +1,29 @@
+{
+    "name": "to-do-list",
+    "version": "1.0.0",
+    "main": "main.js",
+    "author": "Gabriel Menezes",
+    "scripts": {
+        "start": "electron main.js",
+        "build": "electron-builder",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^3.0.2",
+        "electron-builder": "^22.10.5"
+    },
+    "build": {
+        "appId": "gabriel.menezes-electron-to-do-list",
+        "productName": "To Do List",
+        "directories": {
+            "output": "dist"
+        },
+        "publish": null,
+        "win": {
+            "icon": "tray.png",
+            "target": "nsis"
+        }
+    }
+}
